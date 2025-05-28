@@ -25,3 +25,28 @@ const myfun = function(){
 }
 
 myfun()
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
+//data stored in fashion:
+
+//stack(primitive) - copy : no change in original
+let name1 = "leela"
+let name2 = name1
+console.log(name1)
+console.log(name2)
+name2 = "king"  //here only name2 is changed as it took copy of name1 not original name1
+console.log(name1)
+console.log(name2)
+
+//heap(non-primitive) - reference : change leads to entire change
+let obj1 = {
+    email: "lee@123"
+}
+let obj2 = obj1
+console.log(obj1)
+console.log(obj2)
+obj2.email = "king@123"  // here email of obj1 and obj2 is changed as heap gives original value access
+console.log(obj1)
+console.log(obj2)
