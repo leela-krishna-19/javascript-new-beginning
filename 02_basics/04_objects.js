@@ -57,3 +57,15 @@ console.log(tinderUser);
  console.log(Object.entries(tinderUser)); //maps key values to array
 
  console.log(tinderUser.hasOwnProperty('isLoggedIn')); //checks if particular key is present or not
+
+ 
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+console.log(course.courseInstructor)
+
+const {courseInstructor: instructor} = course  //we can shorten the key like this // const {key_name: new_name} = object
+console.log(instructor); //now new name can be called instead of big names  -this is used in react
